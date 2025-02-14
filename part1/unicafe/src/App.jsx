@@ -22,8 +22,8 @@ const Statistics = (props) => {
             <Statisticline text="neutral" value={props.neutral} />
             <Statisticline text="bad" value={props.bad} />
             <Statisticline text="all" value={props.all} />
-            <Statisticline text="average" value={props.average} />
-            <Statisticline text="positive" value={props.positive} />
+            <Statisticline text="average" value={props.average.toFixed(2)} />
+            <Statisticline text="positive" value={`${props.positive.toFixed(2)} %`} />
           </tbody>
         </table>
       </div>
